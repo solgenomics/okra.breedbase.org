@@ -1,0 +1,186 @@
+format-version: 1.2
+date: 05:05:2025 17:10
+saved-by: Lukas Mueller
+default-namespace: OKRA
+ontology: OKRA
+
+[Term]
+id: OKRA:0000001
+name: Okra Root
+
+[Term]
+id: OKRA:0000002
+name: Morphological
+is_a: OKRA:0000001 ! Okra Root
+
+[Term]
+id: OKRA:0000003
+name: Growth Habit
+is_a: OKRA:0000002 ! Morphological
+
+[Term]
+id: OKRA:0000004
+name: Growth Habit Rating
+def: "Visual observation of whole plant and comparison to standard reference okra descriptor." []
+relationship: variable_of OKRA:0000003 ! Growth Habit
+
+[Term]
+id: OKRA:0000005
+name: Branching Pattern
+is_a: OKRA:0000002 ! Morphological
+
+[Term]
+id: OKRA:0000006
+name: Branching Pattern Rating
+def: "Count of the number of branches on the main stem." []
+relationship: variable_of OKRA:0000005 ! Branching Pattern
+
+[Term]
+id: OKRA:0000007
+name: Plant Height
+is_a: OKRA:0000002 ! Morhological
+
+[Term]
+id: OKRA:0000008
+name: Plant Height - cm
+def: "Length from base of the plant to the highest point (tip) of the main stem in cm." []
+relationship: variable_of OKRA:0000007 ! Plant Height
+
+[Term]
+id: OKRA:0000009
+name: Node Number
+is_a: OKRA:0000002 ! Morphological
+
+[Term]
+id: OKRA:0000010
+name: Node Count
+def: "Count of all nodes on the main stem starting from the plant base to the last node on the main stem." []
+relationship: variable_of OKRA:0000009 ! Node Number
+
+[Term]
+id: OKRA:0000011
+name: Length to First Node
+is_a: OKRA:0000002 ! Morphological
+
+[Term]
+id: OKRA:0000012
+name: Length to First Node - cm
+def: "Length of the vertical distance from the base of the plant to the first node on the main stem in cm." []
+relationship: variable_of OKRA:0000011 ! Length to First Node
+
+[Term]
+id: OKRA:0000013
+name: Images
+is_a: OKRA:0000002 ! Morphological
+
+[Term]
+id: OKRA:0000014
+name: Stem Image
+def: "Digital image of the stem obtained 5cm from the base." []
+relationship: variable_of OKRA:0000013 ! Images
+
+[Term]
+id: OKRA:0000015
+name: Stem Diameter
+is_a: OKRA:0000002 ! Morphological
+
+[Term]
+id: OKRA:0000016
+name: Stem Diameter - cm
+def: "Measurement of stem diameter using image of stem taken 5 cm from base in centimeters." []
+relationship: variable_of OKRA:0000015
+
+[Term]
+id: OKRA:0000016
+name: Leaf Image
+def: "Digital image of representative leaf of each plant" []
+relationship: variable_of OKRA:0000013 ! Images
+
+[Term]
+id: OKRA:0000017
+name: Fruit Image
+def: "Digital image of representative fruit of each plant." []
+relationship: variable_of OKRA:0000013 ! Images
+
+[Term]
+id: OKRA:0000018
+name: Fruit Ridge
+is_a: OKRA:0000002 ! Morphological
+
+[Term]
+id: OKRA:0000019
+name: Fruit Ridge Count
+def: "Count of the number of ridges on a physiological matured fruit." []
+relationship: variable_of OKRA:0000018
+
+[Term]
+id: OKRA:0000020
+name: Detachment Force
+is_a: OKRA:0000002 ! Morphological
+
+[Term]
+id: OKRA:0000021
+name: Detachment Force lb/F
+def: "Measurement of detachment force in lb/F using a digital force gauge." []
+relationship: variable_of OKRA:0000020
+
+[Term]
+id: OKRA:0000022
+name: Destem Force
+is_a: OKRA:0000002 ! Morphological
+
+[Term]
+id: OKRA:0000023
+name: Destem Force lb/F
+def: "	Measurement of destem force in lb/F using a digital force gauge." []
+relationship: variable_of OKRA:0000002 ! Morphological
+
+[Term]
+id: OKRA:0000024
+name: Flowering
+is_a: OKRA:0000002 ! Morphological
+
+[Term]
+id: OKRA:0000025
+name: Flowering Date
+def: "Date of first flower emergence." []
+relationship: variable_of OKRA:0000024
+
+[Term]
+id: OKRA:0000027
+name: Nodes to First Flower Count
+def: "Count of all nodes on the main stem starting from the plant base to the node of the first flower." []
+relationship: variable_of OKRA:0000024
+
+[Term]
+id: OKRA:0000028
+name: Whole Plant Image
+def: "Digital image of whole plant" []
+relationship: variable_of OKRA:0000013 ! Images 
+
+[Term]
+id: OKRA:0000029
+name: Color
+is_a: OKRA:0000002 ! Morphological
+
+[Term]
+id: OKRA:0000030
+name: Stem Color Rating
+def: "Rating of color based on stem image." []
+relationship: variable_of OKRA:0000029 ! Color
+
+[Term]
+id: OKRA:0000031
+name: Leaf Color Rating
+def: "Rating of leaf color from leaf image." []
+relationship: variable_of OKRA:0000029 ! Color
+
+[Term]
+id: OKRA:0000032
+name: Fruit Color Rating
+def: "Rating of fruit color from fruit image." []
+relationship: variable_of OKRA:0000029 ! Color
+
+
+
+
