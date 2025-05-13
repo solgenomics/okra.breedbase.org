@@ -86,12 +86,12 @@ is_a: OKRA:0000002 ! Morphological
 
 [Term]
 id: OKRA:0000016
-name: Stem Diameter - cm
+name: Stem Diameter in cm
 def: "Measurement of stem diameter using image of stem taken 5 cm from base in centimeters." []
 relationship: variable_of OKRA:0000015
 
 [Term]
-id: OKRA:0000016
+id: OKRA:0000033
 name: Leaf Image
 def: "Digital image of representative leaf of each plant" []
 relationship: variable_of OKRA:0000013 ! Images
@@ -133,7 +133,7 @@ is_a: OKRA:0000002 ! Morphological
 id: OKRA:0000023
 name: Destem Force lb/F
 def: "	Measurement of destem force in lb/F using a digital force gauge." []
-relationship: variable_of OKRA:0000002 ! Morphological
+relationship: variable_of OKRA:0000022 ! Destem Force
 
 [Term]
 id: OKRA:0000024
@@ -181,6 +181,24 @@ name: Fruit Color Rating
 def: "Rating of fruit color from fruit image." []
 relationship: variable_of OKRA:0000029 ! Color
 
+[Term]
+id: OKRA:0000036
+name: Field status
+is_a: OKRA:0000002 ! Morphological
 
+[Term]
+id: OKRA:0000034
+name: Requires replanting
+relationship: variable_of OKRA:0000036 ! Field status
+
+[Term]
+id: OKRA:0000035
+name: Plant status
+relationship: variable_of OKRA:0000036 ! Field status
+
+[Term]
+id: OKRA:0000037
+name: Date replanted
+relationship: variable_of OKRA:0000036 ! Field status
 
 
