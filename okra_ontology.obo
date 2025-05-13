@@ -118,11 +118,7 @@ id: OKRA:0000020
 name: Detachment Force
 is_a: OKRA:0000002 ! Morphological
 
-[Term]
-id: OKRA:0000021
-name: Detachment Force lb/F
-def: "Measurement of detachment force in lb/F using a digital force gauge." []
-relationship: variable_of OKRA:0000020
+
 
 [Term]
 id: OKRA:0000022
@@ -201,4 +197,59 @@ id: OKRA:0000037
 name: Date replanted
 relationship: variable_of OKRA:0000036 ! Field status
 
+[Term]
+id: OKRA:0000038
+name: Fruit Breaking Force  
+is_a: OKRA:0000002 ! Morhological
 
+[Term]
+id: OKRA:0000039
+name: Peduncle Length  
+is_a: OKRA:0000002 ! Morhological
+
+[Term]
+id: OKRA:0000040
+name: Destemmed Fruit  
+is_a: OKRA:0000002 ! Morhological
+
+
+[Term]
+id: OKRA:0000041
+name: Locule Trait  
+is_a: OKRA:0000002 ! Morhological
+
+[Term]
+id: OKRA:0000042
+name: Flower Image Trait  
+is_a: OKRA:0000002 ! Morhological
+
+[Term]
+id: OKRA:0000043
+name: Fruit Breaking Force - 1/4"
+relationship: variable_of OKRA:0000038 ! Fruit Breaking Force
+
+[Term]
+id: OKRA:0000044
+name: Peduncle Length - mm
+relationship: variable_of OKRA:0000039 ! Peduncle Length
+
+
+[Term]
+id: OKRA:0000045
+name: Destemmed Fruit Image
+relationship: variable_of OKRA:0000040 ! Destemmed Fruit
+
+[Term]
+id: OKRA:0000046
+name: Locule Image
+relationship: variable_of OKRA:0000041 ! Locule Trait
+
+[Term]
+id: OKRA:0000047
+name: Locule Count
+relationship: variable_of OKRA:0000041 ! Locule Trait
+
+[Term]
+id: OKRA:0000048
+name: Flower Image
+relationship: variable_of OKRA:0000042 ! Flower Image Trait
