@@ -235,7 +235,7 @@ relationship: variable_of OKRA:0000040 ! Destemmed Fruit
 [Term]
 id: OKRA:0000046
 name: Locule Image
-relationship: variable_of OKRA:0000041 ! Locule Trait
+relationship: variable_of OKRA:0000013 ! Images 
 
 [Term]
 id: OKRA:0000047
