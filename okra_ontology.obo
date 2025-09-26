@@ -11,234 +11,398 @@ name: Okra Root
 [Term]
 id: OKRA:0000002
 name: Morphological
+namespace: OKRA
 is_a: OKRA:0000001 ! Okra Root
 
 [Term]
 id: OKRA:0000003
 name: Growth Habit
+namespace: OKRA
 is_a: OKRA:0000002 ! Morphological
 
 [Term]
 id: OKRA:0000004
 name: Growth Habit Rating
+namespace: OKRA
 def: "Visual observation of whole plant and comparison to standard reference okra descriptor." []
 relationship: variable_of OKRA:0000003 ! Growth Habit
 
 [Term]
 id: OKRA:0000005
 name: Branching Pattern
+namespace: OKRA
 is_a: OKRA:0000002 ! Morphological
 
 [Term]
 id: OKRA:0000006
 name: Branching Pattern Rating
+namespace: OKRA
 def: "Count of the number of branches on the main stem." []
 relationship: variable_of OKRA:0000005 ! Branching Pattern
 
 [Term]
 id: OKRA:0000007
 name: Plant Height
+namespace: OKRA
 is_a: OKRA:0000002 ! Morhological
 
 [Term]
 id: OKRA:0000008
 name: Plant Height - cm
+namespace: OKRA
 def: "Length from base of the plant to the highest point (tip) of the main stem in cm." []
 relationship: variable_of OKRA:0000007 ! Plant Height
 
 [Term]
 id: OKRA:0000009
 name: Node Number
+namespace: OKRA
 is_a: OKRA:0000002 ! Morphological
 
 [Term]
 id: OKRA:0000010
 name: Node Count
+namespace: OKRA
 def: "Count of all nodes on the main stem starting from the plant base to the last node on the main stem." []
 relationship: variable_of OKRA:0000009 ! Node Number
 
 [Term]
 id: OKRA:0000011
 name: Length to First Node
+namespace: OKRA
 is_a: OKRA:0000002 ! Morphological
 
 [Term]
 id: OKRA:0000012
 name: Length to First Node - cm
+namespace: OKRA
 def: "Length of the vertical distance from the base of the plant to the first node on the main stem in cm." []
 relationship: variable_of OKRA:0000011 ! Length to First Node
 
 [Term]
 id: OKRA:0000013
+namespace: OKRA
 name: Images
 is_a: OKRA:0000002 ! Morphological
 
 [Term]
 id: OKRA:0000014
 name: Stem Image
+namespace: OKRA
 def: "Digital image of the stem obtained 5cm from the base." []
 relationship: variable_of OKRA:0000013 ! Images
 
 [Term]
 id: OKRA:0000015
 name: Stem Diameter
+namespace: OKRA
 is_a: OKRA:0000002 ! Morphological
 
 [Term]
 id: OKRA:0000016
 name: Stem Diameter in cm
+namespace: OKRA
 def: "Measurement of stem diameter using image of stem taken 5 cm from base in centimeters." []
 relationship: variable_of OKRA:0000015
 
 [Term]
 id: OKRA:0000033
 name: Leaf Image
+namespace: OKRA
 def: "Digital image of representative leaf of each plant" []
 relationship: variable_of OKRA:0000013 ! Images
 
 [Term]
 id: OKRA:0000017
 name: Fruit Image
+namespace: OKRA
 def: "Digital image of representative fruit of each plant." []
 relationship: variable_of OKRA:0000013 ! Images
 
 [Term]
 id: OKRA:0000018
 name: Fruit Ridge
+namespace: OKRA
 is_a: OKRA:0000002 ! Morphological
 
 [Term]
 id: OKRA:0000019
 name: Fruit Ridge Count
+namespace: OKRA
 def: "Count of the number of ridges on a physiological matured fruit." []
 relationship: variable_of OKRA:0000018
 
 [Term]
 id: OKRA:0000022
 name: Destem Force
+namespace: OKRA
 is_a: OKRA:0000002 ! Morphological
 
 [Term]
 id: OKRA:0000023
 name: Destem Force lb/F
+namespace: OKRA
 def: "	Measurement of destem force in lb/F using a digital force gauge." []
 relationship: variable_of OKRA:0000022 ! Destem Force
 
 [Term]
 id: OKRA:0000024
 name: Flowering
+namespace: OKRA
 is_a: OKRA:0000002 ! Morphological
 
 [Term]
 id: OKRA:0000025
 name: Flowering Date
+namespace: OKRA
 def: "Date of first flower emergence." []
 relationship: variable_of OKRA:0000024
 
 [Term]
 id: OKRA:0000027
 name: Nodes to First Flower Count
+namespace: OKRA
 def: "Count of all nodes on the main stem starting from the plant base to the node of the first flower." []
 relationship: variable_of OKRA:0000024
 
 [Term]
 id: OKRA:0000028
 name: Whole Plant Image
+namespace: OKRA
 def: "Digital image of whole plant" []
 relationship: variable_of OKRA:0000013 ! Images 
 
 [Term]
 id: OKRA:0000029
 name: Color
+namespace: OKRA
 is_a: OKRA:0000002 ! Morphological
 
 [Term]
 id: OKRA:0000030
 name: Stem Color Rating
+namespace: OKRA
 def: "Rating of color based on stem image." []
 relationship: variable_of OKRA:0000029 ! Color
 
 [Term]
 id: OKRA:0000031
 name: Leaf Color Rating
+namespace: OKRA
 def: "Rating of leaf color from leaf image." []
 relationship: variable_of OKRA:0000029 ! Color
 
 [Term]
 id: OKRA:0000032
 name: Fruit Color Rating
+namespace: OKRA
 def: "Rating of fruit color from fruit image." []
 relationship: variable_of OKRA:0000029 ! Color
 
 [Term]
 id: OKRA:0000036
 name: Field status
+namespace: OKRA
 is_a: OKRA:0000002 ! Morphological
 
 [Term]
 id: OKRA:0000034
 name: Requires replanting
+namespace: OKRA
 relationship: variable_of OKRA:0000036 ! Field status
 
 [Term]
 id: OKRA:0000035
 name: Plant status
+namespace: OKRA
 relationship: variable_of OKRA:0000036 ! Field status
 
 [Term]
 id: OKRA:0000037
 name: Date replanted
+namespace: OKRA
 relationship: variable_of OKRA:0000036 ! Field status
 
 [Term]
 id: OKRA:0000038
-name: Fruit Breaking Force  
+name: Fruit Breaking Force 
+namespace: OKRA 
 is_a: OKRA:0000002 ! Morhological
 
 [Term]
 id: OKRA:0000039
 name: Peduncle Length  
+namespace: OKRA
 is_a: OKRA:0000002 ! Morhological
 
 [Term]
 id: OKRA:0000040
-name: Destemmed Fruit  
+name: Destemmed Fruit 
+namespace: OKRA 
 is_a: OKRA:0000002 ! Morhological
 
 
 [Term]
 id: OKRA:0000041
-name: Locule Trait  
+name: Locule Trait
+namespace: OKRA  
 is_a: OKRA:0000002 ! Morhological
 
 
 [Term]
 id: OKRA:0000043
 name: Fruit Breaking Force - 1/4"
+namespace: OKRA
 relationship: variable_of OKRA:0000038 ! Fruit Breaking Force
 
 [Term]
 id: OKRA:0000044
 name: Peduncle Length - mm
+namespace: OKRA
 relationship: variable_of OKRA:0000039 ! Peduncle Length
 
 
 [Term]
 id: OKRA:0000045
 name: Destemmed Fruit Image
+namespace: OKRA
 relationship: variable_of OKRA:0000040 ! Destemmed Fruit
 
 [Term]
 id: OKRA:0000046
 name: Locule Image
+namespace: OKRA
 relationship: variable_of OKRA:0000013 ! Images 
 
 [Term]
 id: OKRA:0000047
 name: Locule Count
+namespace: OKRA
 relationship: variable_of OKRA:0000041 ! Locule Trait
 
 [Term]
 id: OKRA:0000049
 name: Flower Image
+namespace: OKRA
 relationship: variable_of OKRA:0000013 ! Images
+
+
+[Term]
+id: OKRA:0000050
+name: Destem Outcome - Trait
+namespace: OKRA  
+is_a: OKRA:0000002 ! Morhological
+
+[Term]
+id: OKRA:0000059
+name: Destem Outcome
+namespace: OKRA
+def: "The result of what happens when attempting to destrem an okra fruit using a digital force gauge." []
+relationship: variable_of OKRA:0000050 ! Destem Outcome - Trait 
+
+[Term]
+id: OKRA:0000051
+name: Seed Collected - Selfed Trait
+namespace: OKRA
+is_a: OKRA:0000002 ! Morhological
+
+[Term]
+id: OKRA:0000060
+name: Seed Collected - Selfed
+namespace: OKRA
+def: "Collected seed by controlled selfing, including bagging of flowers." []
+relationship: variable_of OKRA:0000051 ! Seed Collected - Selfed 
+
+
+[Term]
+id: OKRA:0000052
+name: Seed Collected - Open Pollinated Trait 
+namespace: OKRA
+is_a: OKRA:0000002 ! Morhological
+
+[Term]
+id: OKRA:0000061
+name: Seed Collected - Open Pollinated
+namespace: OKRA
+def: "Collected seed that was open pollinated, without controlling flowers." []
+relationship: variable_of OKRA:0000052 ! Seed Collected - Open Pollinated Trait 
+
+[Term]
+id: OKRA:0000053
+name: Leaf Hopper Count - Adult Trait 
+namespace: OKRA 
+is_a: OKRA:0000002 ! Morhological
+
+[Term]
+id: OKRA:0000062
+name: Leaf Hopper Count - Adult
+namespace: OKRA
+def: "Collected seed that was open pollinated, without controlling flowers." []
+relationship: variable_of OKRA:0000053 ! Leaf Hopper Count - Adult Trait
+
+[Term]
+id: OKRA:0000054
+name: Leaf Hopper Count - Nymph Trait  
+namespace: OKRA
+is_a: OKRA:0000002 ! Morhological
+
+[Term]
+id: OKRA:0000063
+name: Leaf Hopper Count - Nymph
+namespace: OKRA
+def: "Count of the number of two-spotted cotton leafhopper (jassid) nymphs from an individual leaf." []
+relationship: variable_of OKRA:0000054 ! Leaf Hopper Count - Nymph Trait
+
+[Term]
+id: OKRA:0000055
+name: Leaf Hopper Count - Females Trait 
+namespace: OKRA 
+is_a: OKRA:0000002 ! Morhological
+
+[Term]
+id: OKRA:0000064
+name: Leaf Hopper Count - Females
+namespace: OKRA
+def: "Count of the number of two-spotted cotton leafhopper (jassid) females from an individual leaf." []
+relationship: variable_of OKRA:0000055 ! Leaf Hopper Count - Females Trait
+
+[Term]
+id: OKRA:0000056
+name: Leaf Hopper Count - Males Trait 
+namespace: OKRA
+is_a: OKRA:0000002 ! Morhological
+
+[Term]
+id: OKRA:0000065
+name: Leaf Hopper Count - Males
+namespace: OKRA
+def: "Count of the number of two-spotted cotton leafhopper (jassid) males from an individual leaf." []
+relationship: variable_of OKRA:0000056 ! Leaf Hopper Count - Males Trait
+
+[Term]
+id: OKRA:0000057
+name: Leaf hopper damage rating trait
+namespace: OKRA  
+is_a: OKRA:0000002 ! Morhological
+
+[Term]
+id: OKRA:0000066
+name: Leaf hopper damage rating - Categorical (0-5)
+namespace: OKRA
+def: "Rating of the two-spotted cotton leafhopper (jassid) based on a 6-point categorical scale from 0-5; where 0=no damage, entire leaf is green; 1=low damage, where 1-25% of the leaf shows hopperburn, yellowing at margins; 2=Medium damage, 26-50% of leaf area showing hopperburn, slight cupping at margins; 3=High damage, where 51-75% of the leaf area shows hopperburn, severe cupping and bronzing; 4=Severe damage, where entire leaf area showing hopperburn, petiole and leaf dried; 5=Complete damage, entire leaf is dried." []
+relationship: variable_of OKRA:0000057 ! Leaf hopper damage rating trait
+
+[Term]
+id: OKRA:0000058
+name: Leaf hopper damage - whole plant image Trait
+namespace: OKRA
+is_a: OKRA:0000002 ! Morhological
+
+[Term]
+id: OKRA:0000067
+name: Leaf hopper damage - whole plant image
+namespace: OKRA
+def: "Photograph of the whole plant that is experiencing two-spotted cotton leafhopper (jassid) damage." []
+relationship: variable_of OKRA:0000058 ! Leaf hopper damage - whole plant image Trait
+
+
